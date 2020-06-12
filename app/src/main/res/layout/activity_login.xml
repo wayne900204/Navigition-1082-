@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LOGIN.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="H,16:9"
+        app:srcCompat="@drawable/logincool"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/loginUserPhoto"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/wenyared"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            app:riv_oval="true"
+            />
+
+        <TextView
+            android:id="@+id/txLoginAccount"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:text="Account:"
+            android:background="@color/colorLightBlue"
+            app:layout_constraintTop_toBottomOf="@+id/loginUserPhoto"
+            app:layout_constraintStart_toStartOf="@+id/loginUserPhoto"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/EtxLoginAccount"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@color/colorLightBlue"
+            android:textSize="20dp"
+            android:hint="account"
+            app:layout_constraintStart_toEndOf="@+id/txLoginAccount"
+            app:layout_constraintTop_toBottomOf="@+id/loginUserPhoto"
+            app:layout_constraintEnd_toEndOf="@+id/loginUserPhoto"
+            android:inputType="text"
+
+            />
+
+        <TextView
+            android:id="@+id/txLoginPassword"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Password:"
+            android:background="@color/colorLightBlue"
+            app:layout_constraintTop_toBottomOf="@+id/txLoginAccount"
+            app:layout_constraintStart_toStartOf="@+id/loginUserPhoto"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            />
+        <EditText
+            android:id="@+id/EtxLoginPassword"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@color/colorLightBlue"
+            android:textSize="20dp"
+            android:hint="password"
+            app:layout_constraintStart_toEndOf="@+id/txLoginPassword"
+            app:layout_constraintTop_toBottomOf="@+id/EtxLoginAccount"
+            app:layout_constraintEnd_toEndOf="@+id/loginUserPhoto"
+            android:inputType="textPassword"
+            android:layout_marginTop="50dp"
+            />
+        <Button
+            android:id="@+id/BtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/loginroundbutton"
+            app:layout_constraintTop_toBottomOf="@+id/txLoginPassword"
+            app:layout_constraintStart_toStartOf="@+id/loginUserPhoto"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="Login"
+            android:textSize="25dp"
+
+            app:layout_constraintEnd_toEndOf="@id/loginUserPhoto"
+            />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/loginroundbutton"
+            app:layout_constraintTop_toBottomOf="@+id/BtLogin"
+            app:layout_constraintStart_toStartOf="@id/loginUserPhoto"
+            app:layout_constraintEnd_toEndOf="@+id/loginUserPhoto"
+            android:layout_marginTop="30dp"
+            android:text="註冊"
+            android:textSize="18dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

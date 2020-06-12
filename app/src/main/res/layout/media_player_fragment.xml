@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/Media_Player_TX"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:text="Hello~\n好累哦\n:)"
+        android:textColor="#E61010"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/Media_Player_TX"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/media_player_play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:tint="#0E42DC"
+        app:srcCompat="@android:drawable/ic_media_play"
+         app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@+id/media_player_previous"
+        android:layout_marginLeft="60dp"/>
+
+    <ImageButton
+        android:id="@+id/media_player_previous"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:tint="@color/colorLightRed"
+        app:srcCompat="@android:drawable/ic_media_previous"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        android:layout_marginTop="60dp"/>
+
+    <ImageButton
+        android:id="@+id/media_player_next"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:drawable/ic_media_next"
+        android:tint="@color/colorYellow"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp"/>
+
+    <ImageButton
+        android:id="@+id/media_player_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:drawable/ic_media_pause"
+        android:tint="@color/colorLightPink"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@+id/media_player_play"
+        android:layout_marginLeft="60dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/f"
+        app:layout_constraintTop_toBottomOf="@+id/media_player_play"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

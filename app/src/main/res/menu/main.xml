@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="User">
+        <menu>
+            <item
+                android:id="@+id/nav_Home"
+                android:title="Home"
+                android:icon="@drawable/ic_home"/>
+            <item
+                android:id="@+id/nav_Profile"
+                android:title="Profile"
+
+                android:icon="@drawable/profile"/>
+            <item
+                android:id="@+id/nav_Media_Player"
+                android:title="Media Player"
+
+                android:icon="@drawable/user"/>
+            <item
+                android:id="@+id/nav_messageboard"
+                android:title="MessageBoard"
+
+                android:icon="@drawable/messageboard"/>
+
+
+        </menu>
+    </item>
+    <item android:title="Other">
+
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:title="Setting"
+                android:icon="@drawable/setting"
+                />
+            <item
+                android:id="@+id/nav_support"
+                android:title="Support"
+                android:icon="@drawable/support"
+                />
+            <item android:id="@+id/nav_LogOut"
+                android:title="Logout"
+                android:icon="@drawable/logout"/>
+        </menu>
+    </item>
+
+
+</menu>
